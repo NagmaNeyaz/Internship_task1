@@ -1,0 +1,285 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+   
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden ;
+}
+
+header {
+    position: relative ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 30px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    padding: 30px 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+}
+
+
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.donate-btn {
+    color: black;
+    padding: 1px 12px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid black;
+    display: inline-block;
+    transition: background 0.3s ease;
+}
+
+.donate-btn:hover {
+    background-color: #218838;
+    color: white;
+}
+.hero {
+    position: relative;
+    width: 100%;
+    height: 450px; 
+    background-image: url('https://images.unsplash.com/photo-1504159506876-f8338247a14a?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aHVuZ3J5JTIwY2hpbGR8ZW58MHx8MHx8fDA%3D'); 
+    background-size:  cover;
+    background-position: 0 -300px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    padding: 0 90px; 
+    background-repeat: no-repeat;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    max-width: 40%; 
+    text-align: right; 
+}
+
+.hero-content {
+        position: absolute;
+    right: -398px;
+    top: 124px;
+}
+
+.hero-content h4 {
+    margin-left: 228px;
+    margin-top: 15px;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.hero-content ul {
+    margin-left: 107px;
+    margin-top: 120px;
+}
+
+
+
+
+.hero p {
+    font-size: 1rem;
+    font-style: italic;
+    color: black;
+    text-align: right;
+}
+
+.social ul {
+    list-style: none;
+    display: flex; 
+    gap: 20px; 
+}
+
+.social li {
+    display: inline;
+    font-size: 16px;
+   font-weight: bold;
+}
+
+.mission-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.mission-section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.mission-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-content: center;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.mission-card {
+    background: white;
+    border: 1px solid #ddd;
+
+    text-align: left;
+}
+
+
+.mission-card  div {
+    padding-top: 5px ;
+    padding-bottom: 10px ;
+    padding-left: 15px ;
+    padding-right: 10px ;
+}
+
+.mission-card img {
+    width: 100%;
+    height: 170px ;
+    object-fit: cover;
+
+}
+
+.logo {
+        letter-spacing: 1.2px;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 19px ;
+    /* background: #fff;
+    padding: 10px;
+    border-radius: 12px; */
+}
+
+.mission-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.mission-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.mission-card a {
+    text-decoration: none;
+    color: #008CBA;
+    font-weight: bold;
+}
+
+.mission-card a:hover {
+    text-decoration: underline;
+}
+
+
+.impact {
+    width: 100% ;
+    height: 400px ;
+    background: url('https://t4.ftcdn.net/jpg/06/45/78/97/360_F_645789725_UVcZOtNDgA553zikfetQsQqh8biFcg31.jpg');
+    color:white;
+   
+    background-position: center ;
+    background-size: cover;
+    padding-top: 10px ;
+    position: relative;
+    z-index: -2;
+}
+
+.impact .overlay {
+    width: 100% ;
+    height: 100% ;
+    background-color: rgba(0, 0, 0, 0.5) ;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+.impact .stats {
+        display: grid
+;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding-top: 140px;
+}
+
+.impact .stats h4 {
+    font-size: 50px ;
+    font-weight: bold;
+}
+
+.impact .stats p {
+    font-size: 16px ;
+    text-transform: uppercase ;
+}
+
+.impact h2 {
+    text-align: center ;
+    font-size: 35px ;
+}
+
+
+.footer-container {
+    display: flex ;
+}
+
+.footer-container .content {
+    padding: 45px;
+}
+
+.footer-container .content h3 {
+    font-size: 20px ;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.footer-container .content p {
+    font-size: 15px;
+    padding: 20px 0;
+}
+
+.footer-container .content button {
+    background: inherit;
+    padding: 7px 10px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 14px;
+}
+
+.help{
+        text-align: center;
+        padding:20px;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+.color-1 {
+    background: #018187;
+}
+
+.color-2 {
+    background: #D4AF37;
+}
+.color-3 {
+    background:  #ec2d26;
+}
