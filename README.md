@@ -1,2 +1,2 @@
 # Internship_task1
-link:
+link: https://nagmaneyaz.github.io/Internship_task1/
